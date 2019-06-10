@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My HTML web page!</title>
+	<meta name="viewport" content="initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style>
+		*{
+			font-family: sans-serif;
+			font-size: 16px;
+		}
+		h1, h2{
+			font-family: "Comfortaa", cursive;
+		}
+		h1{
+			font-size: 2em;
+			color: white;
+		}
+		h2{
+			color: lightseagreen;
+			font-size: 1.5em;
+		}
+		div{
+			width: 1200px;
+			border: 1px solid gold;
+			margin: auto;
+			padding: 0 30px 10px 30px; 
+		}
+		header{
+			text-align: center;
+			background: gold;
+			padding: 5px;
+			margin: 10px 0 10px 0;
+		}
+		hr{
+			border: none;
+			height: 1px;
+			background: gold;
+		}
+		body{
+			background: #ff4c4c;
+		}
+		ol li{
+			padding: 5px;
+			margin-bottom: 15px;
+		}
+		a{
+			color: blue;
+			display: block;
+			margin-bottom: 5px;
+			transition:all 0.1s;
+		}
+		a:hover{
+			font-size: 1.5em;
+			text-decoration: none;
+		}
+		img{
+			max-width: 200px;
+			float: right;
+		}
+		footer{
+			background: rgba(255, 215, 0, 0.25);
+			border-radius: 30px;
+			padding: 10px;
+		}
+		footer p{
+			font-size: 1em;
+			margin: 0;
+			text-align: center;
+		}
+		.section1{
+			margin-bottom: 50px;
+		}
+		.themed{
+			color: darkorchid;
+		}
+		@keyframes dance{
+			from {transform: rotate(0deg);}
+			to {transform: rotate(5deg);}
+		}
+		.animate-this:hover{
+			animation-name: dance;
+			animation-duration: 1s;
+			animation-iteration-count: infinite;
+			animation-direction: alternate;
+		}
+
+		@media (max-width: 800px){
+			*{
+				font-size: 15px;
+			}
+			#main{
+				max-width: 100%;
+				padding: 0;
+				border: none;
+			}
+			img{
+				float: none;
+				max-width: 100%;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div id="main">
+		<header>
+			<h1><i class="fa fa-code"></i>Welcome to my html page!</h1>
+		</header>
+		<section class="section1">
+			<img class="animate-this" src="carnage1.jpg" alt="Carnage">
+			<h2>With some stylish CSS thrown in too...</h2>
+			<p>Welcome to my <strong>first HTML web page.</strong> So far, I have been learning about coding such as:</p>
+			<ol>
+				<li>A look at some coding concepts</li>
+				<li>Building games in Scratch</li>
+				<li>Designing web pages in HTML</li>
+			</ol>
+		</section>
+		<hr>
+		<section>
+			<h2 class="themed">Learning more coding</h2>
+			<p>Here are some of my favorite education links to other learning sites:</p>
+			<a href="#">Visit the Scratch website</a>
+			<a href="#">W3Schools</a>
+			<a href="#">BBC Schools</a>
+		</section>
+		<hr>
+		<footer>
+			<p>Site by me</p>
+		</footer>
+	</div>
+</body>
+</html>
